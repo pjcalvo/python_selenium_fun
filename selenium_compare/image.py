@@ -25,15 +25,11 @@ class VisualValidation:
 
 
     def __init__(self):
-        print('******************************************')
-        print('***** Starting visual test execution *****')
         self.setup_folders()
         self.set_up()
         self.capture_screens()
         self.analyze()
         self.clean_up()
-        print('****** Finished visual test execution ****')
-        print('******************************************')
 
 
     def setup_folders(self):
@@ -127,4 +123,9 @@ class VisualValidation:
 
         return region_total/factor
 
-VisualValidation()
+if __name__ == "__main__":
+    print('******************************************')
+    print('***** Starting visual test execution *****')
+    VisualValidation()
+    print('****** Finished visual test execution ****')
+    print('******************************************')
